@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r3.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="3.2" />
+            <VerticalStackLayout>
+                <Label
+                Text="Panel kontaktowy"
+                SemanticProperties.HeadingLevel="Level1" />
+
+                <Entry 
+                x:Name="Mail"
+                Placeholder="e-mail"/>
+
+                <Entry 
+                x:Name="Tel"
+                Placeholder="telefon"/>
+
+                <HorizontalStackLayout>
+                    <Button                
+                    x:Name="Send"
+                    Text="Wyslij"
+                    Clicked="Send_Clicked"
+                    HorizontalOptions="Fill" />
+                    <Button                
+                    x:Name="Clear"
+                    Text="Wyczysc"
+                    Clicked="Clear_Clicked"
+                    HorizontalOptions="Fill" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <Label Text="3.3" />
+            <VerticalStackLayout>
+                <Grid Padding="20" RowSpacing="15" ColumnSpacing="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label 
+                      Text="Produkt" 
+                      Grid.Row="0" 
+                      Grid.Column="0" 
+                      VerticalOptions="Center" />
+                    <Entry x:Name="Nazwa" 
+                        Placeholder="Wpisz nazwę produktu" 
+                        Grid.Row="0" Grid.Column="1" />
+                    
+                    <Label 
+                      Text="Ilosc"
+                      Grid.Row="1" 
+                      Grid.Column="0" />
+                    <Entry x:Name="Ilosc" 
+                        Placeholder="0" 
+                       Keyboard="Numeric" 
+                       Grid.Row="1" Grid.Column="1" />
+
+                    <Label 
+                      Text="Adres dostawy" 
+                      Grid.Row="2" 
+                      Grid.Column="0" 
+                      VerticalOptions="Center" />
+                    <Entry x:Name="Adres" 
+                        Placeholder="Wpisz adres" 
+                      Grid.Row="2" Grid.Column="1" />
+
+                    <Button Text="Złóż zamówienie" 
+                        Clicked="Button_Clicked"
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" 
+                        Margin="0,10,0,0" />
+
+                </Grid> 
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r6.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Button x:Name="PlusBtn"
+                Clicked="OnCounterButtonClicked"
+                Text="Plus"/>
+
+            <Button x:Name="MinusBtn"
+                Clicked="OnCounterButtonClicked"
+                Text="Minus"/>
+
+            <Button x:Name="ResetBtn"
+                Clicked="ResetBtn_Clicked"
+                Text="Zeruj"/>
+
+            <Label x:Name="NumberLabel" Text="bierzaca liczba: 0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

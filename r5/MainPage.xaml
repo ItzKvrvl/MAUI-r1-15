@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r5.MainPage"
+             Title="Panel rezerwacji">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Picker 
+                x:Name="listaSal" 
+                Title="Wybierz sale"
+                SelectedIndexChanged="listaSal_SelectedIndexChanged">
+
+                <Picker.Items>
+                    <x:String>Sala A</x:String>
+                    <x:String>Sala B</x:String>
+                    <x:String>Sala C</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label x:Name="Ilosc" Text="Ilosc: 1"/>
+            <Stepper 
+                 x:Name="stepperIlosc" 
+                 Minimum="1" 
+                 Maximum="50" 
+                 Increment="1" 
+                 Value="1"
+                 ValueChanged="stepperIlosc_ValueChanged"/>
+
+            <Label Text="Data rezerwacji"/>
+            <DatePicker x:Name="DateChosen" Format="dd.MM.yyyy"/>
+
+            <Button
+                x:Name="Btn"
+                Text="Zarezerwuj"
+                Clicked="OnClicked"
+                BackgroundColor="LightBlue"
+                HorizontalOptions="Fill" />
+
+            <Label x:Name="lblKomunikat" Text="" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

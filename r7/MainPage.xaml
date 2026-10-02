@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout x:Name="Page"
+            BackgroundColor="Black"
+            Padding="30,0"
+            Spacing="25">
+
+            <Slider 
+                x:Name="R" 
+                Minimum="0" 
+                Maximum="255" 
+                Value="0" 
+                ValueChanged="OnRGBChanged" />
+
+            <Slider 
+                x:Name="G" 
+                Minimum="0" 
+                Maximum="255" 
+                Value="0" 
+                ValueChanged="OnRGBChanged" />
+
+            <Slider 
+                x:Name="B" 
+                Minimum="0" 
+                Maximum="255" 
+                Value="0" 
+                ValueChanged="OnRGBChanged" />
+
+            <Label x:Name="Color16x" 
+                Text="Aktualny kolor: #000000"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
