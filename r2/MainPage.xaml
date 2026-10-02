@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r2.MainPage"
+             Title="123456789">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Kalkulator powitań"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="EntryCity" 
+                Placeholder="wpisz miasto"/>
+
+            <Entry x:Name="EntryName" 
+                Placeholder="podaj imie"/>
+
+            <Button
+                x:Name="Btn"
+                Text="Pokaż"
+                Clicked="OnClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

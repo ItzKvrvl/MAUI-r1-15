@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r15.MainPage"
+             Title="Kalkulator napiwku. Wykonal 25" 
+             BackgroundColor="#E6E6FA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Kalkulator napiwku" 
+                 FontSize="28" 
+                 FontAttributes="Bold" 
+                 HorizontalOptions="Center" />
+
+            <Label Text="Kwota rachunku (zl):" />
+            <Entry x:Name="poleKwota" 
+                Keyboard="Numeric" />
+
+            <Label Text="Liczba osob:" />
+            <Entry x:Name="poleOsob" 
+                Keyboard="Numeric" />
+
+            <Label Text="Stawka napiwku" 
+                FontAttributes="Bold" />
+
+            <RadioButton x:Name="stawka10" 
+               Content="10%" 
+               GroupName="stawka" 
+               IsChecked="True" />
+
+            <RadioButton x:Name="stawka15" 
+               Content="15%" 
+               GroupName="stawka" />
+
+            <RadioButton x:Name="stawka20" 
+               Content="20%" 
+               GroupName="stawka" />
+
+            <Button Text="Oblicz" 
+                 BackgroundColor="#3CB371" 
+                 TextColor="White" 
+                 Clicked="Oblicz" />
+
+            <Label x:Name="etykietaNapiwek" 
+                 Text="Napiwek: " 
+                 FontAttributes="Bold" />
+
+            <Label x:Name="etykietaRazem" 
+                 Text="Razem: " 
+                 FontAttributes="Bold" />
+
+            <Label x:Name="etykietaNaOsobte" 
+                 Text="Na osobe: " 
+                 FontAttributes="Bold" />
+
+            <Button Text="Wyczysc" 
+                 BackgroundColor="#CD5C5C" 
+                 TextColor="White" 
+                 Clicked="Wyczysc" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

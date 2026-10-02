@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r12_INF04.MainPage"
+             Title="Wprowadzenie danych do paszportu. Wykonal: 25" 
+             BackgroundColor="#5F9EA0">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Grid ColumnDefinitions="Auto, *" 
+                 RowDefinitions="Auto, Auto, Auto" 
+                 ColumnSpacing="10" 
+                 RowSpacing="10">
+
+                <Label Text="Numer" 
+                  VerticalOptions="Center" 
+                  Grid.Row="0" Grid.Column="0" />
+
+                <Entry x:Name="poleNumer" 
+                  BackgroundColor="#F0FFFF" 
+                  Unfocused="NumerOpuszczony" 
+                  Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Imie" 
+                  VerticalOptions="Center" 
+                  Grid.Row="1" Grid.Column="0" />
+
+                <Entry x:Name="poleImie" 
+                  BackgroundColor="#F0FFFF" 
+                  Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="Nazwisko" 
+                  VerticalOptions="Center" 
+                  Grid.Row="2" Grid.Column="0" />
+
+                <Entry x:Name="poleNazwisko" 
+                  BackgroundColor="#F0FFFF" 
+                  Grid.Row="2" Grid.Column="1" />
+            </Grid>
+
+            <Label Text="Kolor oczu" 
+                FontAttributes="Bold" />
+
+            <RadioButton x:Name="oczyNiebieskie" 
+               Content="niebieskie" 
+               GroupName="kolorOczu" 
+               IsChecked="True" />
+
+            <RadioButton x:Name="oczyZielone" 
+               Content="zielone" 
+               GroupName="kolorOczu" />
+
+            <RadioButton x:Name="oczyPiwne" 
+               Content="piwne" 
+               GroupName="kolorOczu" />
+
+            <RadioButton x:Name="oczySzare" 
+               Content="szare" 
+               GroupName="kolorOczu" />
+
+            <Button Text="OK" 
+                 BackgroundColor="#F0FFFF" 
+                 TextColor="Black" 
+                 Clicked="ZatwierdzDane" />
+
+            <Button Text="Wyczysc" 
+                 BackgroundColor="#F0FFFF" 
+                 TextColor="Black" 
+                 Clicked="Wyczysc" />
+
+            <HorizontalStackLayout Spacing="20">
+                <Image x:Name="obrazZdjecie"
+                    HeightRequest="180" />
+                <Image x:Name="obrazOdcisk"
+                    HeightRequest="180" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

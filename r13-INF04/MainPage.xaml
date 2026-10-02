@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r13_INF04.MainPage"
+             Title="Nadaj Przesylke 25">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Rodzaj przesylki" 
+                FontAttributes="Bold" />
+
+            <RadioButton x:Name="poleP" 
+               Content="Pocztowka" 
+               GroupName="przesylka" 
+               IsChecked="True" />
+
+            <RadioButton x:Name="poleL" 
+               Content="List" 
+               GroupName="przesylka" />
+
+            <RadioButton x:Name="poleK" 
+               Content="Paczka" 
+               GroupName="przesylka" />
+
+            <Grid ColumnDefinitions="Auto, *" 
+                 RowDefinitions="Auto, Auto, Auto" 
+                 ColumnSpacing="10" 
+                 RowSpacing="10">
+
+                <Label Text="Ulica z numerem" 
+                  VerticalOptions="Center" 
+                  Grid.Row="0" Grid.Column="0" />
+
+                <Entry x:Name="poleUlica" 
+                    Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Kod pocztowy" 
+                  VerticalOptions="Center" 
+                  Grid.Row="1" Grid.Column="0" />
+
+                <Entry x:Name="poleKod" 
+                    Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="Miasto" 
+                  VerticalOptions="Center" 
+                  Grid.Row="2" Grid.Column="0" />
+
+                <Entry x:Name="poleMiasto" 
+                    Grid.Row="2" Grid.Column="1" />
+
+            </Grid>
+
+            <Button Text="Sprawdz Cene" 
+                Clicked="SprawdzCene" />
+
+            <Image x:Name="obrazPrzesylki" 
+                 Source="pocztowka.png" 
+                 HeightRequest="150" />
+
+            <Label x:Name="etykietaCena" 
+                 Text="Cena: " 
+                 FontAttributes="Bold" 
+                 FontSize="24" />
+
+            <Button Text="Zatwierdz" 
+                Clicked="ZatwierdzPrzesylke" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

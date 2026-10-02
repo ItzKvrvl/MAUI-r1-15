@@ -1,0 +1,47 @@
+<Solution>
+  <Project Path="PowitanieApp/PowitanieApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r10/r10.csproj" Id="f8674a48-659d-46cf-bd73-5937b2d9502d">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r11-INF04/r11-INF04.csproj" Id="26cfa8da-125b-4db3-96b9-7d4a26537146">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r12-INF04/r12-INF04.csproj" Id="8a9f2288-088a-4103-b30b-4ce68a96cbd2">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r13-INF04/r13-INF04.csproj" Id="9bd836ff-4f16-49c1-a2da-dc3cce7ff603">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r14/r14.csproj" Id="980d4e73-c173-4cf7-b5d3-e45e151391db">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r15/r15.csproj" Id="be2e11a5-6f96-4663-9b4e-811473815ed9">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r2/r2.csproj" Id="c2d99a1e-45b2-43ca-8c7b-8e4af93d2a39">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r3/r3.csproj" Id="788c337a-b3f0-47ea-b9f3-f5da6c720749">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r4/r4.csproj" Id="cf83754c-5c5a-470a-b549-7d37e69e2515">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r5/r5.csproj" Id="60b87bfc-e18c-42a0-b87f-42abccf4c433">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r6/r6.csproj" Id="7cf04b94-c52d-44ec-aad8-8c6aeda1b508">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r7/r7.csproj" Id="f4904228-744a-4016-8c89-23bf91d5c2d0">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r8/r8.csproj" Id="f96795e8-c84c-4fe3-87e6-ae62f553fe35">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="r9/r9.csproj" Id="84612053-a0ee-47db-8825-417934810ace">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
